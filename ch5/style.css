@@ -1,0 +1,16 @@
+h2{
+    font-size: 25px;
+    color: black;
+    font-family: '맑은고딕';
+    text-shadow: 3px 3px 10px gray;
+}
+li{
+    list-style-image: url('../resource/arrow.gif');
+}
+p{
+    color: green;
+    text-decoration: underline;
+}
+span{
+    font-weight: bold;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        당신의 학년을 선택해 주세요
+        <hr align="left" width="300">
+        <!--name 속성을 주면 속성값 중 1개만 선택됨
+        복수선택 X -->
+        <input type="radio" name="grade" checked> 1학년
+        <input type="radio" name="grade" > 2학년
+        <input type="radio" name="grade" > 3학년
+        <input type="radio" name="grade" > 4학년
+        <br><br><br>
+        <label>당신의 열령대를 선택해 주세요.</label>
+        <hr align="left" width="600">
+        <input type="radio" name="age">10대 미만
+        <input type="radio" name="age">10대 이상~30대 미만
+        <input type="radio" name="age">40대 미만
+        <input type="radio" name="age">40대 이상~70대 미만
+        <input type="radio" name="age">70대 이상
+        <hr align="left" width="600">
+        <select>
+            <option>김밥</option>
+            <option>떢볶이</option>
+            <option>오뎅</option>
+            <option>순대</option>
+        </select>
+        <select multiple="true">
+            <option>김밥</option>
+            <option>떢볶이</option>
+            <option>오뎅</option>
+            <option>순대</option>
+            <option>김밥2</option>
+            <option>떢볶이2</option>
+            <option>오뎅2</option>
+            <option>순대2</option>            
+        </select>
+        <select>
+            <optgroup label="HTML5">
+                <option>멀티미디어 태그</option>
+                <option>테이블 태그</option>
+                <option>폼 태그</option>
+            </optgroup>
+            <optgroup label="CSS">
+                <option>스타일</option>
+                <option>애니메이션</option>
+                <option>3D 변환</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <input type="color"><br>
+        <input type="date"><br>
+        <input type="datetime-local"><br>
+        <input type="number"><br>
+        <input type="range"><br>
+        <input type="week"><br>
+        파일 첨부 -> <input type="file"><br>
+        제목 : <input type="text"><br>
+        암호 : <input type="password"><br>
+        내용 :<br>
+        <textarea rows="10" cols="100">hi!!</textarea><br>
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+        <button>저장하기</button>
+    </form>
+</body>
+</html>
