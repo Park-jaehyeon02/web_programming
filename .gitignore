@@ -4,7 +4,7 @@
 
 #user setting
 self_introduce/img
-
+*.zip
 
 ### VisualStudioCode ###
 .vscode/*
