@@ -1,0 +1,54 @@
+body{
+    font-family: '돋움';
+    color: #444444;
+}
+
+table,td{
+    border-top: solid 1px #aaaaaa;
+}
+table{
+    border-collapse: collapse;
+    width: 610px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+h3{
+    border-left: solid 5px green;
+    padding-left: 10px;
+}
+
+div{
+    text-align: right;
+    width: 610px;
+}
+
+tr{
+    height: 60px;
+    vertical-align: top;
+}
+
+td{
+    width: 76px;
+    padding: 5px;
+}
+
+#day{
+    height: 20px;
+    background-color: #eeeeee;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blue{
+    color: blue;
+    font-weight: bold;
+}
+
+.red{
+    color: red;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
