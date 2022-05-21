@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+            text-align: left;
+            padding : 5px;
+            height: 15px;
+            width: 100px;
+        }
+        thead, tfoot{
+            background: gray;
+            color: yellow;
+        }
+        tbody tr:nth-child(odd){
+            background: pink;
+        }
+        tbody tr:nth-child(even){
+            background: skyblue;
+        }
+        tbody tr:hover{
+            background: aliceblue;
+        }
+        tr{
+            border-bottom: 1px solid salmon;
+        }
+    </style>
+</head>
+<body>
+    <h3>1학기 성적</h3>
+    <hr>
+        <table>
+            <thead>
+                <tr><th>이름</th><th>HTML</th><th>CSS</th></tr>
+            </thead>
+            <tfoot>
+                <tr><th>합</th><th>620</th><th>498</th></tr>
+            </tfoot>
+            <tbody>
+                <tr><td>홍길동</td><td>80</td><td>80</td></tr>
+                <tr><td>홍길동</td><td>80</td><td>80</td></tr>
+                <tr><td>홍길동</td><td>80</td><td>80</td></tr>
+                <tr><td>홍길동</td><td>80</td><td>80</td></tr>
+                <tr><td>홍길동</td><td>80</td><td>80</td></tr>
+            </tbody>
+        </table>
+    
+</body>
+</html>
