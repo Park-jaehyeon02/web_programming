@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function qu()
+        {
+            var ret = prompt("이름을 입력하세요","황기태");
+        if(ret==null){
+            // 취소 버튼이나 다이얼로그를 닫은 경우
+            alert("null");
+            qu();
+        }
+        else if(ret ==""){
+            //문자열 입력 없이 확인 버튼 누른 경우
+            alert("blank");
+            qu();
+        }
+        else{
+            //ret에는 사용자가 입력한 문자열
+            alert("Input");
+            var ret=confirm("전송할까요");
+            if(ret==true){
+                alert("전송!")
+            }
+            else{
+                qu();
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var ret = prompt("이름을 입력하세요","황기태");
+        if(ret==null){
+            // 취소 버튼이나 다이얼로그를 닫은 경우
+            alert("null");
+            qu();
+        }
+        else if(ret ==""){
+            //문자열 입력 없이 확인 버튼 누른 경우
+            alert("blank");
+            qu();
+        }
+        else{
+            //ret에는 사용자가 입력한 문자열
+            alert("Input");
+            var ret=confirm("전송할까요");
+            if(ret==true){
+                alert("전송!")
+            }
+            else{
+                qu();
+            }
+        }
+    </script>
+    <!--
+        i = i+1 한문장의 경우 세미콜론 생략 가능
+        j = j+1; 
+        k = k+1; m=m+1; //한문장에 여러문장 사용 가능
+        주석은 
+        // 한라인 주선
+        /* */ 여러 라인 주석
+        char 형이 없이 전부 문자열로 표현함
+    -->
+    <script>
+        var x;  //전역 변수
+        function f(){
+            var y;
+            x=10;
+            y=10;
+            z=10;
+
+            var x; //지역변수
+            x = 1; //지역변수
+            this.x = 100; // 전역변수 x에 100을 저장
+            document.write("지역변수 x=" + x );
+            document.write("<br>");
+            document.write("전역변수 x=" + this.x);
+        }
+        f();
+    </script>
+</body>
+</html>
