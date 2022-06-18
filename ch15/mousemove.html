@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background: skyblue;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../resource/cat.gif" onmousedown="where(event)"><br><br>
+    <div id="div"></div>
+    <script>
+    var div = document.getElementById("div");
+    
+    function where(e){
+        var text = "버튼"+e.button+"<br>";
+        text += "(screenX,screenY="+e.screenX + ","+e.screenY + "<br>";
+        
+        text += "(clientX,clientY="+e.clientX + ","+e.clientY + "<br>";
+        
+        text += "(offsetX,offsetY="+e.offsetX + ","+e.offsetY + "<br>";
+        text += "(x,y)=" + e.x + ","+e.y+"\n";
+        div.innerHTML = text;    
+    }
+    </script>
+</body>
+</html>
